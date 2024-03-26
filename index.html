@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Slick Website</title>
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+        <link rel="stylesheet" href="style.css">
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-left">
+                <h1><a href="index.html" style="color: white;text-decoration: none;">Slick</a></h1>
+            </div>
+            <div class="header-center" id="header-center">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#shop">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#collection">Collection</a>
+                        </li>
+                        <li>
+                            <a href="app.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right">
+                <a href="#collection">
+                    <i class="uil uil-search" id="search"></i>
+                </a>
+                <a href="#shop-now">
+                    <i class="uil uil-shopping-cart"></i>
+                </a>
+            </div>
+            <button id="toggle" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+        </header>
+        <!-- home -->
+        <div id="home" class="home">
+            <div class="left">
+                <h1>Buy Now Trendy Shoes</h1>
+                <p>Explore our collection of stylish and comfortable shoes, designed to elevate your everyday look. From casual sneakers to elegant heels, find the perfect pair for any occasion.</p>
+                <a href="#shop" style="text-decoration: none;color: white;"><button>Shop Now</button></a>
+            </div>
+            <div class="right">
+                <img src="shoes 1.png" alt="">
+            </div>
+        </div>
+        <!-- logo -->
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="https://www.tailorbrands.com/wp-content/uploads/2021/09/Adidas-trefoil-logo-768x299.jpg" alt="Logo 1">
+                </div>
+                <div class="slide">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHdJfFJhobJfUBTDwtbPfK6dvqymSaqcytPdKTtuSXQiv3suk8QNNbk88i5L2-cxsPw&usqp=CAU" alt="Logo 2">
+                </div>
+                <div class="slide">
+                    <img src="https://w7.pngwing.com/pngs/1012/770/png-transparent-amazon-logo-amazon-com-amazon-video-logo-company-brand-amazon-logo-miscellaneous-wish-text-thumbnail.png" alt="Logo 3">
+                </div>
+                <div class="slide">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsDY3XAgcf-YzzxM6dj77qxX6fw47hp5rYPSALQ5dmnnUSIGBGCGqTr-Bn35n6GRfb2fo&usqp=CAU" alt="Logo 4">
+                </div>
+                <div class="slide">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIXftWkcVtY82HHk9ot2-43p4ogO2uyPTRU7DT_qv7s0n899jNhseSpVA7CP7RWTr7fg&usqp=CAU" alt="Logo 5">
+                </div>
+                <div class="slide">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmhQ_fbRTlXpWgeCjOCgn_zqDkAFRRDxcb9WekrYyfCH0NdHClsj5kTPPAqVbQZDT2Kpk&usqp=CAU" alt="Logo 1">
+                </div>
+                <div class="slide">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo0DDaXzIZ0PvSQVElaWFcx1Qb5819_OfTfEP93tGpW_IFtc-9s4DnUAU88ANUGcOtzns&usqp=CAU" alt="Logo 2">
+                </div>
+                <div class="slide">
+                    <img src="data:image/png;base64,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" alt="Logo 3">
+                </div>
+                <div class="slide">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1V7c3E3bBXlo82eRGpsLsW9XVQ3mLdcVG-A42C1SRPwU2zaJoJ2Sct51TS_zzqfu4g&usqp=CAU" alt="Logo 4">
+                </div>
+            </div>
+        </div>
+        <!-- slider section -->
+        <div class="container" id="shop">
+            <div class="slider-info">
+                <p>*<u> Our Trending Shoes</u> *</p>
+                <h2>Most Popular <span style="color: rgb(118, 85, 25);"> Products</span></h2>
+                <p>Discover our latest collection of high-quality products.</p>
+                <a href="#contact" style="text-decoration: none;color: white;"><button>Shop Now</button></a>
+            </div>
+            <div class="product-slider">
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZT9O5U4WY49Xd8OFt_uVoXWopLBOfHxjQOub5XhtksNvCmzVd8Mi67OTNqqHpKSvWPqU&usqp=CAU" alt="Product 1">
+                    <h3>The Shoe Spot</h3>
+                    <p>$99.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhA2UlLUTRIrd4NxHVP9JGYLmt4aMp3gnQqd_iy7Wy17O_5temsDU2zNJBjcbJ9sDjPJY&usqp=CAU" alt="Product 2">
+                    <h3>Sole Savvy</h3>
+                    <p>$79.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/41eWEajt1OL.jpg" alt="Product 3">
+                    <h3>Adidas</h3>
+                    <p>$129.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp9WixOUw_RrP4hZEH3c6awjbzX5fg5o-_7u0WcUs2BCaw_86ATq8f5BSDU4Lj4LERIPM&usqp=CAU" alt="Product 4">
+                    <h3>Chic Feet</h3>
+                    <p>$149.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/b83ea3a1df31e3edbb55353be421eb7d.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp" alt="Product 4">
+                    <h3>Trendy Treads</h3>
+                    <p>$149.99</p>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/61DdOEYeuaL._AC_UY300_.jpg" alt="Product 4">
+                    <h3>Soleful Steps</h3>
+                    <p>$149.99</p>
+                </div>
+                <div class="product">
+                    <img src="shoes 1.png" alt="Product 4">
+                    <h3>
+                        Fashion Footwear
+                    </h3>
+                    <p>$149.99</p>
+                </div>
+            </div>
+        </div>
+        <!-- product slider section -->
+        <div class="product-box" id="shop-now">
+            <div class="product-image">
+                <img src="successfully order img.png" alt="Product 1">
+            </div>
+            <div class="product-info">
+                <h3>Are you ready to lead the way</h3>
+                <p>Step up your style with our latest shoe collection. Designed for comfort and crafted with quality materials, these shoes are a perfect blend of fashion and function. Buy now and step out in style!</p>
+                <a href="#contact" style="text-decoration: none;color: white;"><button>Buy Now</button></a>
+            </div>
+        </div>
+        <!-- sell heading-->
+        <div class="sell" id="collection">
+            <h1>* Best Selling *</h1>
+        </div>
+        <!-- product -->
+        <div class="category-buttons">
+            <button onclick="showProducts('man')" class="btn">Man</button>
+            <button onclick="showProducts('woman')">Woman</button>
+            <button onclick="showProducts('boy')">Boy</button>
+            <button onclick="showProducts('child')">Child</button>
+        </div>
+        <div class="product-container" id="product-container">
+            <div class="product-boxs">
+                <img src="shoes 1.png" alt="">
+                <h2>Footwear Frenzy</h2>
+                <p>$49.00</p>
+            </div>
+            <div class="product-boxs">
+                <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/16530962/2021/12/24/9f9b34b2-cba5-415a-9718-c224263649f11640350292538-Puma-Unisex-Casual-Shoes-1941640350292216-1.jpg" alt="">
+                <h2>Red Tape</h2>
+                <p>$89.00</p>
+            </div>
+            <div class="product-boxs">
+                <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/378768/04/sv04/fnd/IND/fmt/png/Reflect-Lite-Unisex-Running-Shoes" alt="">
+                <h2>FreshFeet</h2>
+                <p>$99.00</p>
+            </div>
+            <div class="product-boxs">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKFaRmLoYRqfCVBxgNbFQ1-9OJuw59P3sycuqU25p7OWRGYGLyYOeXBMAAgPmS2ShKL68&usqp=CAU" alt="">
+                <h2>Nike</h2>
+                <p>$129.00</p>
+            </div>
+            <div class="product-boxs">
+                <img src="https://m.media-amazon.com/images/I/61VVeRf0z8L._SY625_.jpg" alt="">
+                <h2>LuxeSoles</h2>
+                <p>$149.00</p>
+            </div>
+            <div class="product-boxs">
+                <img src="https://rukminim1.flixcart.com/image/800/800/k0r15e80/kids-shoe/w/g/j/1-kids-shoes-tryviz-original-imafkggdbvhf2zvv.jpeg?q=90" alt="">
+                <h2>Comfy Kids</h2>
+                <p>$59.00</p>
+            </div>
+            <div class="product-boxs">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtcO-N4Usjq1_6zkfGGag79fEBGvMSBODk6uUPcDgBQqGD3qR3K9eUfNG1Sg-C2clkatg&usqp=CAU" alt="">
+                <h2>Jumping Jacks</h2>
+                <p>$79.00</p>
+            </div>
+            <div class="product-boxs">
+                <img src="https://5.imimg.com/data5/KL/XF/AU/SELLER-3485907/kids-baby-shoes-250x250.jpg" alt="">
+                <h2>Reebok</h2>
+                <p>$59.00</p>
+            </div>
+            <div class="product-boxs">
+                <img src="https://specials-images.forbesimg.com/imageserve/64ee030e2225f394ebd8ae23/Ten-Little-Everyday-Original-Sneakers-in-red/960x0.jpg?cropX1=0&cropX2=798&cropY1=0&cropY2=632" alt="">
+                <h2>Crocs</h2>
+                <p>$69.00</p>
+            </div>
+            <div class="product-boxs">
+                <img src="https://contents.mediadecathlon.com/p2449853/a9d41b7755c66504ea51802fb198e643/p2449853.jpg?format=auto&quality=70&f=650x0" alt="">
+                <h2>Birkenstock</h2>
+                <p>$119.00</p>
+            </div>
+        </div>
+        <!-- faq section -->
+        <div class="faq-head" id="customize">
+            <h1>* Customer Review *</h1>
+        </div>
+        <div class="faq-container">
+            <button class="scroll-button prev" onclick="scrollToPrev()">❮</button>
+            <div class="faq-box">
+                <div class="faq-image">
+                    <img src="https://avatars.githubusercontent.com/u/86187639?v=4" alt="Image 1">
+                </div>
+                <div class="faq-info">
+                    <h3>Deepanshu Thakur</h3>
+                    <p>Super comfortable shoes, perfect for everyday wear!</p>
+                    <div class="star-rating">
+                        &#9733;&#9733;&#9733;&#9733;&#9734;
+                    </div>
+                </div>
+            </div>
+            <div class="faq-box">
+                <div class="faq-image">
+                    <img src="https://images.unsplash.com/photo-1573165850883-9b0e18c44bd2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHByb2Zlc3Npb25hbCUyMHdvbWFufGVufDB8fDB8fHww" alt="Image 2">
+                </div>
+                <div class="faq-info">
+                    <h3>Alina Fernandez</h3>
+                    <p>Love the style and quality of these shoes</p>
+                    <div class="star-rating">
+                        &#9733;&#9733;&#9733;&#9734;&#9734;
+                    </div>
+                </div>
+            </div>
+            <div class="faq-box">
+                <div class="faq-image">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.UGlKxiZQylR3CnJIXSbFIAHaLL&pid=Api&P=0" alt="Image 2">
+                </div>
+                <div class="faq-info">
+                    <h3>Sartaj Malhotra</h3>
+                    <p>Great value for money, highly recommend!</p>
+                    <div class="star-rating">
+                        &#9733;&#9733;&#9733;&#9734;&#9734;
+                    </div>
+                </div>
+            </div>
+            <div class="faq-box">
+                <div class="faq-image">
+                    <img src="https://img.freepik.com/free-photo/handsome-corporate-man-real-estate-agent-assistant-smiling-hold-hands-together-how-may-i-help-you-smiling-friendly-polite-assist-customer-white-background_176420-45257.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1711324800&semt=ais" alt="Image 2">
+                </div>
+                <div class="faq-info">
+                    <h3>Elon Martin</h3>
+                    <p>These shoes are a game-changer, so stylish and comfortable.</p>
+                    <div class="star-rating">
+                        &#9733;&#9733;&#9733;&#9734;&#9734;
+                    </div>
+                </div>
+            </div>
+            <div class="faq-box">
+                <div class="faq-image">
+                    <img src="https://i.pinimg.com/736x/f8/93/c7/f893c7e1abe5b076eaee7c58223329e5.jpg" alt="Image 2">
+                </div>
+                <div class="faq-info">
+                    <h3>Alisha Miracle</h3>
+                    <p>Best shoes I've ever owned, will definitely buy again.</p>
+                    <div class="star-rating">
+                        &#9733;&#9733;&#9733;&#9734;&#9734;
+                    </div>
+                </div>
+            </div>
+            <div class="faq-box">
+                <div class="faq-image">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.IFjJNHVfQ-IWf9HoR9CQzgHaLO&pid=Api&P=0" alt="Image 2">
+                </div>
+                <div class="faq-info">
+                    <h3>Olivia Tumbler</h3>
+                    <p>Excellent customer service and fast delivery</p>
+                    <div class="star-rating">
+                        &#9733;&#9733;&#9733;&#9734;&#9734;
+                    </div>
+                </div>
+            </div>
+            <div class="faq-box">
+                <div class="faq-image">
+                    <img src="https://t4.ftcdn.net/jpg/01/42/20/17/360_F_142201762_qMCuIAolgpz4NbF5T5m66KQJzYzrEbUv.jpg" alt="Image 2">
+                </div>
+                <div class="faq-info">
+                    <h3>Veer Singhaniya</h3>
+                    <p>The shoes exceeded my expectations, very happy with my purchase.</p>
+                    <div class="star-rating">
+                        &#9733;&#9733;&#9733;&#9734;&#9734;
+                    </div>
+                </div>
+            </div>
+            <div class="faq-box">
+                <div class="faq-image">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/034/598/493/small/ai-generative-happy-business-man-in-a-suit-white-background-photo.jpg" alt="Image 2">
+                </div>
+                <div class="faq-info">
+                    <h3>Akshay Rajput</h3>
+                    <p>These shoes are a must-have, they go with everything!</p>
+                    <div class="star-rating">
+                        &#9733;&#9733;&#9733;&#9734;&#9734;
+                    </div>
+                </div>
+            </div>
+            
+            <button class="scroll-button next" onclick="scrollToNext()">❯</button>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="footer-1">
+                <h2>Slick</h2>
+                <p>Slick is good shoe website</p>
+                <a href="https://www.facebook.com/profile.php?id=100058050492879" style="color: black;text-decoration: none;"><i class="uil uil-facebook"></i></a>
+                <a href="https://www.instagram.com/deepanshuthakur360/" style="color: black;text-decoration: none;"><i class="uil uil-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/deepanshu-thakur-985a5a215/" style="color: black;text-decoration: none;"><i class="uil uil-linkedin"></i></a>
+            </div>
+            <div class="footer-2" id="contact">
+                <h2>Subscribe for news letter</h2>
+                <form action="https://formspree.io/f/mqkrbyqa" method="post">
+                    <input type="email" name="email" placeholder="Enter email..." required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-3">
+                <h2>Quick Links</h2>
+                <a href="#home" style="color: #fff;text-decoration: none;">
+                    <p>Home</p>
+                </a>
+                <a href="#shop" style="color: #fff;text-decoration: none;">
+                    <p>Shop</p>
+                </a>
+                <a href="#collection" style="color: #fff;text-decoration: none;">
+                    <p>Category</p>
+                </a>
+                <a href="app.html" style="color: #fff;text-decoration: none;">
+                    <p>Contact Us</p>
+                </a>
+                <a href="privacy.html" style="color: #fff;text-decoration: none;">
+                    <p>Privacy</p>
+                </a>
+            </div>
+        </div>
+        <a href="index.html" style="text-decoration: none;" class="link">
+            <footer style="text-align: center;padding: 10px; color: #ffff; background: #000;">www.slick.com © all right reserve</footer>
+        </a>
+        <script src="app.js"></script>
+    </body>
+</html>
