@@ -13,20 +13,21 @@ html {
 /*nav start */
 .header-1 {
   display: flex;
-  padding: 20px 20px;
+  padding: 1px 20px;
   border: 1px solid #191919;
   background: #333;
   justify-content: space-between;
 }
 
-.header-1 .images-1 img {
-  width: 110px;
-  height: 60px;
+.header-1 .images-1 a h1 {
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
 }
 
 .header-1 .para-2 .head-4 {
   display: flex;
-  padding: 17px 0px;
+  padding: 10px 0px;
   font-family: 'Open Sans', sans-serif;
   align-items: center;
   gap: 2rem;
@@ -37,6 +38,7 @@ html {
   font-size: 1.4rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
+
 }
 
 .header-1 .para-2 .head-4 h1 a {
@@ -61,14 +63,15 @@ html {
 }
 .header-1 .para-2 .toggle {
   display: none;
-  font-size: 36px;
+  margin-top: 23px;
+  font-size: 26px;
 }
 
 /* Responsive navbar */
 @media screen and (max-width: 768px) {
   .header-1 .para-2 .head-4 {
     position: absolute;
-    top: -17px;
+    top: -3px;
     gap: 10px;
     left: 0;
     background-color: #19193c;
@@ -88,9 +91,8 @@ html {
 
   .header-1 .para-2 .head-4 h1 a:hover {
     color: orange;
-  font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
-
 
 
   .header-1 .para-2 .toggle {
@@ -425,7 +427,7 @@ html {
 .category-buttons button {
   padding: 8px 18px;
   gap: 10px;
-  margin: 6px 10px;
+  margin: 0 10px;
   border: 1px solid #000;
   background: #fff;
   font-size: 15px;
