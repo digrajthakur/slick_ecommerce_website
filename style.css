@@ -3,11 +3,16 @@
 body {
   overflow-x: hidden;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Outfit', sans-serif;
+
 }
 
 html {
   overflow-x: hidden;
+}
+
+section {
+  padding: 2rem 5%;
 }
 
 /*nav start */
@@ -16,7 +21,13 @@ html {
   padding: 1px 20px;
   border: 1px solid #191919;
   background: #333;
+  align-items: center;
   justify-content: space-between;
+}
+
+.header-1 .images-1 img {
+  width: 110px;
+  height: 60px;
 }
 
 .header-1 .images-1 a h1 {
@@ -27,10 +38,11 @@ html {
 
 .header-1 .para-2 .head-4 {
   display: flex;
-  padding: 10px 0px;
   font-family: 'Open Sans', sans-serif;
   align-items: center;
   gap: 2rem;
+  padding: 10px 0px;
+
 }
 
 
@@ -38,7 +50,6 @@ html {
   font-size: 1.4rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
-
 }
 
 .header-1 .para-2 .head-4 h1 a {
@@ -61,9 +72,9 @@ html {
 .header-right a:hover {
   color: orange;
 }
+
 .header-1 .para-2 .toggle {
   display: none;
-  margin-top: 23px;
   font-size: 26px;
 }
 
@@ -71,7 +82,7 @@ html {
 @media screen and (max-width: 768px) {
   .header-1 .para-2 .head-4 {
     position: absolute;
-    top: -3px;
+    top: -6px;
     gap: 10px;
     left: 0;
     background-color: #19193c;
@@ -119,9 +130,9 @@ html {
 
 
 .home .left {
-  width: 100vw;
+
   justify-content: center;
-  margin: 16vh 5vw;
+
 }
 
 .home .left h1 {
@@ -136,13 +147,17 @@ html {
   font-size: 1.3vw;
   box-shadow: 2px 2px grey;
   background: #000;
-  padding: 1vh 2vw;
+  width: 180px;
+  padding: 12px 24px;
+  cursor: pointer;
   color: #fff;
+  border: rgb(227, 153, 16);
+  transition: 0.3s ease;
+  font-weight: 600;
 }
 
 .home .left button:hover {
   background-color: rgb(227, 153, 16);
-  border: rgb(227, 153, 16);
   border-radius: 12px;
 }
 
@@ -157,8 +172,10 @@ html {
 }
 
 @media (max-width:768px) {
+  section {
+  padding: 1px 2.4%;
+}
   .home {
-
     flex-direction: column;
   }
 
@@ -244,7 +261,6 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
 }
 
 .slider-info {
@@ -257,8 +273,14 @@ html {
 }
 
 .slider-info button {
-  padding: 1.3vh 1vw;
+  padding: 12px 24px;
+  width: 180px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
   background: #000;
+  transition: 0.5s ease;
   box-shadow: 2px 2px grey;
   border: none;
   color: #fff;
@@ -307,7 +329,7 @@ html {
   }
 
   .slider-info button {
-    padding: 1.3vh 3vw;
+    /* padding: 5vh 0vw; */
     background: #000;
     box-shadow: 2px 2px grey;
     border: none;
@@ -325,7 +347,7 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  margin: 50px 30px;
+
   border-radius: 12px;
 }
 
@@ -417,7 +439,14 @@ html {
 }
 
 /* product */
-
+.category-buttons .man-1{
+  background: #000;
+  color: white;
+}
+.category-buttons .man-1:hover{
+  background-color: #fff;
+  color: #000;
+}
 .category-buttons {
   text-align: center;
   padding: 20px 0;
@@ -431,6 +460,7 @@ html {
   border: 1px solid #000;
   background: #fff;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .category-buttons .btn {
@@ -452,7 +482,7 @@ html {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
-  padding: 20px;
+
 }
 
 .product-boxs {
@@ -465,6 +495,7 @@ html {
 .product-boxs img {
   max-width: 60%;
   height: auto;
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
@@ -478,20 +509,18 @@ html {
   text-align: center;
 }
 
-.faq-container {
+/* .faq-container {
   display: flex;
   align-items: center;
-  overflow-x: auto;
-  padding: 20px;
-}
+  flex-wrap: wrap;
+} */
 
 
 
 @media (max-width: 768px) {
   .faq-container {
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    width: 670px;
+
+    min-width: 60.99999%;
 
   }
 }
@@ -499,7 +528,7 @@ html {
 /* /testomonial.css.start/  */
 
 .swiper-container {
-  overflow-x: scroll;
+  overflow-x: hidden;
 
 }
 
@@ -519,10 +548,11 @@ html {
 }
 
 .review .slide .user img {
-  height: 7rem;
+  /* height: 7rem; */
   width: 6rem;
   border-radius: 50%;
   object-fit: contain;
+
 }
 
 
@@ -567,7 +597,10 @@ html {
   border-radius: .5rem;
   position: relative;
   margin-bottom: 20px;
+  margin-right: 20px;
   height: 380px;
+  min-width: 31.99999%;
+
   box-shadow: 0.2rem 0.5rem rgba(0, 0, 0, .1);
 }
 
@@ -642,5 +675,16 @@ html {
     gap: 60px;
     flex-direction: column;
     text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* .faq-container {
+ 
+  } */
+  .review .slide {
+    min-width: 99.99999%;
+
   }
 }
