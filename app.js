@@ -1,7 +1,13 @@
-function toggleMenu() {
-  var headerCenter = document.getElementById("header-center");
-  headerCenter.classList.toggle("menu-open");
-}
+// header start
+let heade = document.querySelector('.head-4');
+let toggle = document.getElementById('toggle');
+
+
+toggle.addEventListener('click', function(){
+    heade.classList.toggle('active')
+    toggle.classList.toggle('fa-remove')
+})
+
 // product
 const products = {
   man: [
