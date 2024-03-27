@@ -424,7 +424,7 @@ header {
 .category-buttons button {
   padding: 8px 18px;
   gap: 10px;
-  margin: 0 10px;
+  margin: 6px 10px;
   border: 1px solid #000;
   background: #fff;
   font-size: 15px;
