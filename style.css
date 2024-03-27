@@ -68,7 +68,7 @@ html {
 @media screen and (max-width: 768px) {
   .header-1 .para-2 .head-4 {
     position: absolute;
-    top: 3px;
+    top: -17px;
     gap: 10px;
     left: 0;
     background-color: #19193c;
