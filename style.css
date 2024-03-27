@@ -15,7 +15,6 @@ html {
   display: flex;
   padding: 20px 20px;
   border: 1px solid #191919;
-
   background: #333;
   justify-content: space-between;
 }
@@ -28,7 +27,7 @@ html {
 .header-1 .para-2 .head-4 {
   display: flex;
   padding: 17px 0px;
-  font-family: 'poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   align-items: center;
   gap: 2rem;
 }
@@ -36,27 +35,19 @@ html {
 
 .header-1 .para-2 .head-4 h1 {
   font-size: 1.4rem;
-  font-family: 'poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 500;
-
 }
 
 .header-1 .para-2 .head-4 h1 a {
   color: white;
-
-  font-family: 'poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-decoration: none;
-
 }
 
 .header-1 .para-2 .head-4 h1 a:hover {
   color: orange;
-  font-family: 'poppins', sans-serif;
-}
-
-.header-1 .para-2 .head-4 a .btns-1:hover {
-  background: dorange;
-  color: white;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .header-right a {
@@ -93,26 +84,14 @@ html {
 
   .header-1 .para-2 .head-4 h1 a {
     color: white;
-
-
   }
 
   .header-1 .para-2 .head-4 h1 a:hover {
-    color: white;
-    font-family: 'poppins', sans-serif;
+    color: orange;
+  font-family: 'Open Sans', sans-serif;
   }
 
-  .header-1 .para-2 .head-4 a .btns-1 {
-    margin-bottom: 24px;
-    font-size: 1.3rem;
-    width: 8rem;
-    padding: 1.2px;
-    border-radius: 10px;
-  }
 
-  .header-1 .para-2 .head-4 .btns-1:hover {
-    border-radius: 50px;
-  }
 
   .header-1 .para-2 .toggle {
     display: block;
