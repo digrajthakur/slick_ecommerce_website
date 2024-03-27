@@ -113,25 +113,36 @@ function showProducts(category) {
   });
 }
 // faq
-const faqContainer = document.querySelector(".faq-container");
-const scrollStep = faqContainer.clientWidth / 2;
 
-function scrollToNext() {
-  faqContainer.scrollBy({
-    left: scrollStep,
-    behavior: "smooth",
-  });
-}
 
-function scrollToPrev() {
-  faqContainer.scrollBy({
-    left: -scrollStep,
-    behavior: "smooth",
-  });
-}
-// const searchs = document.querySelector('#search')
+// swiper faq
 
-// searchs.addEventListener('click',function(){
-//   searchs.innerHTML = "Placed Success",
-//   <input type="text" placeholder="Enter product" required />
-// })
+    var swiper = swiper(".review-slider", {
+  spaceBetween:20,
+  slidesPerView: 2,
+  centeredSlides:true,
+  autoplay:{
+      delay:3000,
+      disableOnInteraction:false,
+  },
+  pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+   loop:true,
+   breakpoints: {
+      0: {
+          slidesPerView:1,
+      },
+      640:{
+          slidesPerView:2,
+      },
+      768:{
+          slidesPerView:2,
+      },
+      1024:{
+          slidesPerView:3,
+      },
+   },
+});
+  
